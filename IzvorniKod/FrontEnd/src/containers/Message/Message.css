@@ -1,0 +1,124 @@
+ .satellite-data {
+    display: flex;
+    flex-direction: column;
+ }
+
+ .data {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+ }
+
+ .communication-params-container {
+    background: #f7f7f7;
+    border-radius: 1.5rem;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 10%), 0 8px 10px -6px rgb(0 0 0 / 10%);
+    padding: 1.5rem !important;
+    display: grid;
+    margin-bottom: 3rem;
+ }
+
+ .button-container {
+    margin-top: 1.5rem;
+ }
+
+ .step-1 > .button-container {
+    display: flex;
+    justify-content: end;
+ }
+
+ .step-2> .button-container, .step-3 .button-container, .step-4 .button-container {
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .selection-container {
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .selection-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ecebeb;
+    border-radius: 0.7rem;
+    padding: 1rem;
+    width: 28rem;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    position: relative;
+ } 
+
+ .selection-option > button {
+    background-color: var( --primary-color-shadow);
+    border-color: var( --primary-color-shadow);
+ }
+
+ .selected {
+    box-shadow: 0 4px 6px -1px rgba(23, 2, 66, 0.639), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+ }
+
+ .selected > button {
+    background-color: var(--surface-600);
+    border-color: var(--surface-600);
+ }
+
+
+ .selected > .checked {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: large;
+    color: var(--primary-color-dark);
+ }
+
+ .step-3 > .station-table {
+    margin-top:2.5rem;
+ }
+
+ .params-header {
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .params {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   width: 75%;
+ }
+
+ .message-container {
+   display: grid;
+   grid-template-columns: auto 1fr;
+   gap: 2rem;
+ }
+
+ .stat-table-header {
+   display: flex;
+   justify-content: end;
+ }
+
+
+ .station-table .p-dropdown {
+   width: auto !important;
+ }
+
+ .progress-spinner {
+   display: flex;
+   justify-content: center;
+   margin-top: 1rem;
+ }
+
+ @keyframes p-progress-spinner-color {
+   0% {
+       stroke: var(--primary-color-dark);
+   }
+}
+
+.message-title {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+}

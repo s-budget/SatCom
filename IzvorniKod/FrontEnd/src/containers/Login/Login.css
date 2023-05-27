@@ -1,0 +1,56 @@
+ .login {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: no-repeat url('../../../public/space.png');
+ }
+
+ .login::backdrop {
+   background-color: black;
+ }
+
+
+ .login-container {
+   background-color: rgba(255, 255, 255, 31%);
+   width: 100%;
+   display: grid;
+   align-items: center;
+   align-content: center;
+   justify-content: center;
+   gap: 2rem;
+ }
+
+ .login-container .p-inputtext {
+   width: 100%;
+   background-color: rgba(3, 3, 80, 44%) !important;
+   color: rgba(255, 255, 255, 0.65);
+   border: none !important;
+ }
+
+ .login-container .p-float-label label {
+   color: rgba(255, 255, 255, 0.65) !important;
+ }
+
+ .login-container .p-button {
+   margin:auto;
+   background: var(--primary-color-dark) !important;
+ }
+ 
+ .login-container .logo-container {
+   display: flex;
+   justify-content: center;
+ }
+
+.login-container .pi-eye, .pi-eye-slash {
+   color: rgba(255, 255, 255, 0.65) !important;
+ }
+
+ .login-container #login-error-message {
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 25px;
+  height: 20px;
+  margin: 10px 0 !important;
+  color: #000000 !important;
+}

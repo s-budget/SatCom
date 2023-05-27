@@ -1,0 +1,42 @@
+.table-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.reject-button {
+    background-color: white;
+    border: white;
+    color: var(  --primary-color-dark);
+}
+
+.reject-button:hover {
+    color: white;
+    background-color: var(--gray-600) !important;
+    border: var(--gray-600);
+}
+
+.page-title {
+    display: flex;
+    justify-content: center;
+}
+
+.page-title > h1 {
+    font-size: 3rem;
+}
+
+.message-table .p-dropdown {
+    width: auto !important;
+  }
+
+.delete-message {
+    display: flex;
+    justify-content: center;
+}
+
+.message-title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}

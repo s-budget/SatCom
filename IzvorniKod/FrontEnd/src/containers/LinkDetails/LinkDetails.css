@@ -1,0 +1,38 @@
+.link-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.link-container button {
+    margin-right: 0px;
+}
+
+.link-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.options {
+    display: flex;
+    gap: 1rem;
+}
+
+.options > button {
+    height: 2.5rem;
+    width: 6rem;
+}
+
+.delete-button.p-button {
+    background-color: var( --surface-700) !important;
+    border: 1px solid var( --surface-700) !important;
+}
+
+div#edit-link {
+    width: 40vw;
+}
+
+.back-action {
+    font-size: 25px;
+}

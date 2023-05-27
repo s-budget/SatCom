@@ -1,0 +1,15 @@
+http://satcom.duckdns.org:3000/login
+
+Podaci o testnim korisničkim računima
+
+Obični uporabni korisnik
+username: korisnik
+password: korisnik
+
+Administrator stranice
+username: superAdmin
+password: superAdmin
+
+Administator satelita
+username: satAdmin
+password: satAdmin

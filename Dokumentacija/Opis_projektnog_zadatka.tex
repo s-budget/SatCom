@@ -1,0 +1,58 @@
+\chapter{Opis projektnog zadatka}
+		
+		
+        {   Cilj ovog projekta je izrada programske potpore za web aplikaciju \textit{SatCom} koja svojim korisnicima omogućuje olakšan i intuitivan način komunikacije sa simuliranim satelitima uz pomoć \textit{SatNOGS} mreže. Zainteresirani korisnici mogu biti dio istraživačke, znanstvene i akademske zajednice ili bilo koja skupina zainteresirana za testiranje komunikacije sa satelitima.} \par
+        {   Zbog velike koristi satelita, njihove široke primjene i povećane troškovne dostupnosti, u posljednjem desetljeću pojavljuje se sve veći broj satelita otvorenog, akademskog tipa, a uz to i pitanje ostvarivanja komunikacije s njima. Općenito, sateliti komuniciraju koristeći se radio komunikacijskim vezama za razašiljanje poruka prema zemaljskim stanicama, nakon čega stanice prime poruku i obrađuju informacije koje poruka sadrži (podatci o satelitu, lokacija satelita, satelitske slike i sl).} \par
+        { U aplikaciji postoje tri uloge:
+        \begin{packed_item}
+            \item običan uporabni korisnik,
+            \item administrator aplikacije,
+            \item administrator satelita.
+        \end{packed_item}
+        {Funkcionalnosti kojima može pristupiti \textit{običan uporabni korisnik} mogu pristupati i korisnici s preostalim ulogama. Razlika je što korisnici s ulogama \textit{administrator aplikacije} i \textit{administrator satelita} imaju pristup dodatnim funkcionalnostima.} \par
+        
+        {Registraciju novih korisnika može obaviti samo korisnik s ulogom \textit{administrator aplikacije} klikom na gumb \textit{Add New User} na stranici \textit{Users}. Pri registriranju novog korisnika potrebno je upisati e-mail adresu, korisničko ime, lozinku i dodijeliti mu jednu od uloga.} \par
+        {Osim registracije korisnika, korisnik s ulogom \textit{administrator aplikacije} može pregledati sve korisnike aplikacije i brisati ih putem stranice \textit{Users} na kojoj se prikazuje lista svih korisnika aplikacije u tabličnom prikazu. Svaki redak tablice sadrži ikonu za brisanje odabranog korisnika.} \par
+
+        {Neregistrirani korisnici ne mogu pristupiti funkcionalnostima aplikacije.} \par
+        
+        {Registriranom i prijavljenom korisniku omogućene su razne aktivnosti u aplikaciji. Korisnik može pristupiti početnoj stranici na kojoj je opisan cilj SatCom projekta i objašnjenje osnovnih pojmova koji se koriste u aplikaciji: 
+        \begin{packed_item}
+            \item satelit,
+            \item zemaljska stanica,
+            \item komunikacijski link, 
+            \item transmiter.
+        \end{packed_item}
+        Korisnik inicijalizira postupak slanja poruka na satelit klikom na gumb\newline \textit{Send message} koji se nalazi u zaglavlju i na početnoj stranici. \par
+        
+        {   Stranica \textit{Send Message} sadrži popis svih satelita i njihovih atributa u tabličnom prikazu i omogućuje korisniku pretraživanje satelita putem tražilice na vrhu tablice. Korisnik odabire satelit s kojim želi ostvariti komunikaciju klikom na redak u tablici. Nakon odabira stanice, korisniku se na vrhu stranice prikaže odabrani satelit, njegove informacije i informacije o njegovim transmiterima, a ispod se nalazi lista svih kompatibilnih komunikacijskih linkova od kojih mora odabrati jedan. Potom korisnik mora odabrati želi li odabir zemaljske stanice ostvariti automatski ili manualno. Automatski odabir podrazumijeva da se o odabiru zemaljske stanice brine sustav. Kod manualnog, korisniku se prepušta odabir jedne od kompatibilnih zemaljskih stanica. U zadnjem koraku korisnik unosi poruku koju želi poslati i zatim čeka odgovor od satelita.} \par
+        
+        {Običan korisnik također može pristupiti svom profilu na stranici \textit{My Profile} koja sadrži korisnikove osobne podatke i gumbove kojima pristupa uređivanju profila te pregledu povijesti poslanih zahtjeva komunikacije sa satelitima. Korisnik može mijenjati korisničko ime i lozinku klikom na gumb \textit{Edit profile}. Pregled poslanih zahtjeva nalazi se na stranici \textit{Message History}, gdje se korisniku prikazuje zapis satelita s kojima je uspješno komunicirao, kao i svi parametri komunikacije (vrijeme slanja poruke, zemaljska stanica, komunikacijski link te sadržaj poruke i odgovora). Povijest komunikacija može se obrisati klikom na gumb \textit{Erase All}.} \par
+
+        
+        {Korisnik s ulogom \textit{administrator satelita} može obavljati razne akcije nad satelitima, komunikacijskim linkovima i transmiterima.} \par
+        {Satelitima pristupa putem stranice \textit{Satellites} na kojoj su prikazani svi sateliti i njihovi atributi u tabličnom prikazu. Na toj stranici, administratoru satelita ponuđene su opcije pregleda podataka, dodavanja novih satelita, brisanja i\newline uređivanja satelita. Klikom na redak u tablici, otvara se stranica \textit{Satellite Details}. Na vrhu navedene stranice nalaze se svi atributi odabranog satelita, a ispod lista povezanih transmitera i njihove informacije. Klikom na jedan od transmitera administratoru se prikazuju njegova svojstva i opcije za brisanje i promjenu podataka. Opcijama se pristupa gumbima \textit{Delete transmitter} i \textit{Edit}.
+        Formi za dodavanje satelita pristupa se putem gumba \textit{Add New Satellite} gdje se upisuju parametari satelita.
+        Brisanje i uređivanje satelita obavlja se klikom na gumbove koji se nalaze na vrhu stranice s podacima o satelitu. Pri uređivanju satelita, administrator satelita može uređivati njegove podatke i dodavati i brisati njegove transmitere.}\par
+
+        {Tabličnom prikazu liste komunikacijskih linkova i njihovih informacija administrator pristupa putem stranice \textit{Links}. Na toj stranici administrator satelita može dodavati nove satelite klikom na gumb \textit{Add New link} čime pristupa formi u koju upisuje podatke novog linka. Klikom na link, prikazuju se informcije o tom linku i opcije za brisanje i uređivanje odabranog linka pomoću gumbova \textit{Delete} i \textit{Edit} koji se nalaze na kraju svakog retka tablice.}
+
+
+        {Zadnje, administrator može zatražiti prikaz svih transmitera putem stranice \textit{Transmitters}. Tamo može odabrati transmitere, te ih potom brisati i uređivati.}\par
+
+
+        
+        {Bitno je napomenuti da zemaljske stanice ne može niti jedan korisnik mijenjati ili brisati. Sustav se svakog dana u ponoć spaja na \textit{SatNOGS} aplikacijsko sučelje i dohvaća podatke aktivnih zemaljskih stanica.} \par
+
+        {Postoje razne mogućnosti proširenja sadašnjeg rješenja koje bi poboljšale aplikaciju, ali nisu nužne za njenu funkcionalnost:
+            \begin{packed_item}
+            \item ostvarenje komunikacije sa stvarnim satelitima koji se nalaze na \textit{SatNOGS} mreži,
+            \item registriranje vlastitih satelita putem aplikacije na \textit{SatNOGS} mrežu,
+            \item omogućavanje korisnicima da satelite na koje često šalju poruke mogu označiti kao \textit{omiljene}, 
+            \item implementacija mobilne aplikacije,
+            \item slanje zahtjeva administratoru stranice za promjenu e-mail adrese,
+            \item slanje zahtjeva za registracijom.
+        \end{packed_item}
+        }
+		
+	

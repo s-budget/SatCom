@@ -1,0 +1,38 @@
+.container {
+  display:flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 300px;
+}
+
+.component {
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+
+.component > .p-button {
+  margin: auto;
+  background:  #6366F1 !important;
+}
+
+.component span, input, .p-dropdown, .p-password {
+  width: 100%;
+}
+
+.component .pi-eye-slash {
+  color: #6c757d !important;
+}
+
+.error-message {
+  align-self: center;
+  text-align: center;
+}
+
+.user-title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}

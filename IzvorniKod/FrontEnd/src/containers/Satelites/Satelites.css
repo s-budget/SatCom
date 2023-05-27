@@ -1,0 +1,60 @@
+.p-datatable > div.p-datatable-wrapper > .p-datatable-table tbody {
+    cursor: pointer;
+}
+
+.satelites-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.satelite-img {
+    width: 100%;
+}
+
+.satelite-datatable p {
+    text-align: left;
+}
+
+.satelite-add-new {
+    display: flex;
+    justify-content: space-between;
+}
+
+.satelite-add-new > button {
+    margin-right: 0px;
+    height: 3rem;
+}
+
+div#new-satelite {
+    width: 40vw;
+}
+
+.submit-buttons-in-modal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit-buttons-in-modal > button:first-child {
+    background-color: var(--surface-700) !important;
+    border: 1px solid var(--surface-700) !important;
+}
+
+div.p-multiselect-panel.p-component.p-connected-overlay-enter-done {
+    z-index: 1200 !important;
+}
+
+#transmId {
+    width: 100%;
+}
+
+sat-title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+ 

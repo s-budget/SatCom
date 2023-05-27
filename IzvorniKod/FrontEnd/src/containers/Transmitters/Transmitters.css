@@ -1,0 +1,47 @@
+.p-datatable > div.p-datatable-wrapper > .p-datatable-table tbody {
+    cursor: pointer;
+}
+
+.transmitter-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.transmitter-datatable p {
+    text-align: left;
+}
+
+.transmitter-add-new {
+    display: flex;
+    justify-content: space-between;
+}
+
+.transmitter-add-new > button {
+    margin-right: 0px;
+    height: 3rem;
+}
+
+div#new-transmitter {
+    width: 40vw;
+}
+
+.submit-buttons-in-modal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit-buttons-in-modal > button:first-child {
+    background-color: var(--surface-700) !important;
+    border: 1px solid var(--surface-700) !important;
+}
+
+.transm-title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+ 
